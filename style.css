@@ -144,4 +144,38 @@ body{
 
 .container{
     flex: 8;
+    padding: 20px 40px 20px 24px;
+}
+
+.container .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.container .nav .search,
+.container .nav .city{
+    display: flex;
+    align-items: center;
+    background: #fafafa;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.container .nav .search input,
+.container .nav .city input{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: transparent;
+    padding-left: 36px;
+}
+
+.container .nav .search i,
+.container .nav .city i{
+    position: relative;
+    font-size: 23px;
+    padding: 6px;
+    color: #0A66C2;
 }
