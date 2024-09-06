@@ -456,3 +456,48 @@ body{
         display: flex;
     }
 }
+
+@media screen and (max-width: 992px) {
+    .container .main   {
+        flex-direction: column-reverse;
+    }
+
+    .container .nav .city{
+        display: none;
+    }
+
+    .container .main .content{
+        padding-bottom: 20px  ;
+    }
+
+    .container .main .filters{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 0;
+        gap: 30px;
+    }
+
+    .container .main .filters .header{
+        width: 100%;
+    }
+
+    .container .main .filters .item{
+        width: 46%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .container .nav > button{
+        padding: 10px;
+    }
+
+    .container .nav >i{
+        display: none;
+    }
+
+    .container .content .job-cards{
+        grid-template-columns: 1fr;
+    }
+}
