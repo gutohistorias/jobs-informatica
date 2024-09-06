@@ -26,8 +26,62 @@ body{
 .sidebar{
     flex: 1;
     background: #111;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.sidebar > a{
+    font-size: 24px;
+    color: #eee;
+    font-weight: 500;
+}
+
+.sidebar .side-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sidebar .side-nav .item{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sidebar .side-nav .item a{
+    color: #a4a8ac;
+    transition: all 0.3s ease;
+}
+
+.sidebar .side-nav .item i{
+    font-size: 20px;
+    color: #a4a8ac;
+    transition: all 0.3s ease;
+}
+
+.sidebar .side-nav .item.active{
+    background: #fafafa;
+}
+
+.sidebar .side-nav .item.active a,
+.sidebar .side-nav .item.active i{
+    color: #111;
+    font-weight: bold;
+
+}
+
+.sidebar .side-profile{
+    background: #fafafa;
+    padding: 14px 10px;
+    border-radius: 10px;
 }
 
 .container{
-    flex: 0;
+    flex: 8;
 }
