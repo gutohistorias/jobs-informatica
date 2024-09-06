@@ -336,16 +336,14 @@ body{
     border-radius: 4px;
 }
 
-.container .main .content .job-cards .card .card-desc{
+.container .main .content .job-cards .card .card-desc {
     font-size: 13px;
-    color:  #a4a8ac;
+    color: #a4a8ac;
     line-height: 18px;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
-    height: calc(18px * 3);
-}
+    max-height: 54px; }
 
 .container .main .filters{
     flex: 2;
@@ -415,4 +413,46 @@ body{
     display: flex;
     align-items: center;
     border-radius: 10px;
+}
+
+.container .main .filters .item .location input{
+    width: 100%;
+    padding-left: 24px;
+    background: transparent;
+    border: none;
+}
+
+.container .main .filters .item .location i{
+    position: absolute;
+    font-size: 18px;
+    color: #a4a8ac;
+}
+
+@media screen and (max-width: 1430px) {
+    .sidebar .side-profile .skill h5,
+    .sidebar .side-profile .skill .skill-tags{
+        display: none;
+    }
+
+    .sidebar .side-profile button{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .container{
+        padding: 20px;
+    }
+
+    .sidebar{
+        position: absolute;
+        z-index: 100;
+        height: 100%;
+        left: -200px;
+    }
+
+    .container .nav>button#menuToggle{
+        display: flex;
+    }
 }
