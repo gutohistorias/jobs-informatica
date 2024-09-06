@@ -82,6 +82,57 @@ body{
     border-radius: 10px;
 }
 
+.sidebar .side-profile .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar .side-profile .info img{
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.sidebar .side-profile .info a{
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.sidebar .side-profile .info p{
+    font-size: 12px;
+    color: #666869;
+    margin: 6px 0 25px;
+}
+
+.sidebar .side-profile .skill .skill-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.sidebar .side-profile .skill .skill-tags .item{
+    padding: 6px;
+    background: #e7e7e7;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 500;
+    color: #666869;
+}
+
+.sidebar .side-profile button{
+    margin-top: 16px;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    background: #111;
+    color: #fafafa;
+    border-radius: 10px;
+
+}
+
 .container{
     flex: 8;
 }
