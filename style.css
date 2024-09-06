@@ -428,6 +428,9 @@ body{
     color: #a4a8ac;
 }
 
+
+/*Parte que faz com que seja possível ver em diferentes telas*/
+
 @media screen and (max-width: 1430px) {
     .sidebar .side-profile .skill h5,
     .sidebar .side-profile .skill .skill-tags{

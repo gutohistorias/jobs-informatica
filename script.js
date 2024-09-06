@@ -43,6 +43,8 @@ clearButton.addEventListener('click', () => {
 });
 
 
+// Parte do código que serve para fazer a filtragem das empresas que você digita
+
 const searchInput = document.getElementById('searchInput');
 const jobCards = document.querySelectorAll('.card');
 
